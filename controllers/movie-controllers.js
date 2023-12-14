@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 import Movie from "../models/Movie.js";
 import mongoose from "mongoose";
 import admin from "../models/admin.js";
+
+
 export const addMovie = async (req, res, next) => {
     const extractedToken = req.headers.authorization.split(" ")[1];  // bearer token
     if(!extractedToken && extractedToken
