@@ -21,8 +21,8 @@ const HomePage = () => {
         <Box padding={5} margin={"auto"}>
             <Typography variant='h4' textAlign={"center"}> Latest Releases</Typography>
         </Box>
-        <Box margin={"auto"} display={"flex"} width={"80%"} justifyContent={"center"} alignItems={"center"}flexwrap="wrap">
-            {movies && movies.map((movie, index)=>(<MovieItem id={movie.id}  title={movie.titlw} posterUrl={movie.posterUrl} releaseDate={movie.releaseDate} key={index}/>))}
+        <Box  display={"flex"} width={"80%"} justifyContent={"center"} alignItems={"center"} flexwrap="wrap" margin={"auto"}>
+            {movies && movies.slice(0,4).map((movie, index)=>(<MovieItem id={movie.id}  title={movie.titlw} posterUrl={movie.posterUrl} releaseDate={movie.releaseDate} key={index}/>))}
         </Box>
         <Box display={"flex"} padding={5} margin={"auto"}>
             <Button LinkComponent={Link} to="/movies" variant='outlined' sx={{margin:"auto", color:"#2b2d42"}}>

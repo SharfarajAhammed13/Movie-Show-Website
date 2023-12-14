@@ -12,10 +12,9 @@ function App() {
   return(
     <div> 
       <Header/>
-      {/* HomePage */}
        <section>
         <Routes>
-          <Route path="/" element={<HomePage/> }/>
+          <Route path="/" element={<HomePage/>}/>
           <Route path="/movies" element={<Movies/>}/>
           <Route path="/admin" element={<Admin/>}/>
           <Route path="/auth" element={<Auth/>}/>

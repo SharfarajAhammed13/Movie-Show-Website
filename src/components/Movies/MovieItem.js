@@ -5,7 +5,8 @@ const MovieItem = ({title,releaseDate, posterUrl, id}) => {
   return (
     <Card sx={{margin:3,  width: 250, height: 320, borderRadius:5, ":hover": {
         boxShadow:"10px 10px 20px #ccc" 
-    }}}>
+    },
+    }}>
       <img height={"50%"} width={"100%"} src='' alt=''/>
       <CardContent>
         <img height={"50%"} width={"100%"} src={posterUrl} alt={title}/>
@@ -17,7 +18,7 @@ const MovieItem = ({title,releaseDate, posterUrl, id}) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button sx={{margin:"auto"}}size="small">Share</Button>
+        <Button sx={{margin:"auto"}}size="small">Book</Button>
       </CardActions>
     </Card>
   )
